@@ -1,0 +1,51 @@
+
+
+.logo{
+    width: 12.5%;
+}
+.banner{
+    width: 50%;
+}
+
+body{
+    background-color: #fdeeed;
+
+}
+header{
+    background-color: #bfa4a4;
+    
+}
+h4{
+    color: black;
+}
+.instagram{
+    width: 5%;
+}
+p{
+    width: 40%;
+ margin-left: 20px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+ text-align: left;
+}
+
+h2{
+    margin-left: 20px;
+    
+}
+iframe{
+    margin-left: 25px;
+    }
+#sectionVideo{
+    display: flex;
+
+}
+
+#nosotros{
+    display: flex;
+}
+
+.parrafos2345{
+    display: flex;
+}
+
