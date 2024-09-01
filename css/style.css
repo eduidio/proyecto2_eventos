@@ -1,51 +1,22 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  color: black;
+  background-color: #f8f9fa;
+}
 
+.pestañas .navbar-nav .nav-link {
+  font-size: 1.1rem;
+  color: #153339;
+}
+.pestañas .navbar-nav .nav-link:hover {
+  color: black;
+}
 
+/*# sourceMappingURL=style.css.map */
 .logo{
-    width: 12.5%;
+  width: 12.5%;
 }
 .banner{
-    width: 50%;
+  width: 50%;
 }
-
-body{
-    background-color: #fdeeed;
-
-}
-header{
-    background-color: #bfa4a4;
-    
-}
-h4{
-    color: black;
-}
-.instagram{
-    width: 5%;
-}
-p{
-    width: 40%;
- margin-left: 20px;
- margin-top: 25px;
- margin-bottom: 25px;
- text-align: left;
-}
-
-h2{
-    margin-left: 20px;
-    
-}
-iframe{
-    margin-left: 25px;
-    }
-#sectionVideo{
-    display: flex;
-
-}
-
-#nosotros{
-    display: flex;
-}
-
-.parrafos2345{
-    display: flex;
-}
-

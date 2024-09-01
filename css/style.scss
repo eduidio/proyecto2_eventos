@@ -1,0 +1,21 @@
+$primary-color: black;
+$secondary-color: #6c757d;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $primary-color;
+  background-color: #f8f9fa;
+}
+.pestañas {
+    .navbar-nav {
+      .nav-link {
+        font-size: 1.1rem;
+        color: #153339;
+        
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+  

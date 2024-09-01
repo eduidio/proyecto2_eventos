@@ -1,99 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Eventos las Estrellas</title>
+    <!-- Integrar Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Hoja de estilos personalizada -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>** Eventos las estrellas **</title>
+
+    <link rel="stylesheet" href="./css/style.scss">
+
 </head>
-
 <body>
-    <section class="home">
-        <div>
-            <a >
-                <img src="./images/logo evento.png" alt="logo" class="logo">
-                <img src="./images/banner evento.png" alt="banner" class="banner">
-            </a>
-        <header><!--encabezado de nuestra pagina-->
-           <nav class="in-flex"><!--menu de navegacion-->
-             <ul style= display:flex;><!--lista desordenada unordered list-->
-                <li style="margin-right: 30px;"><a href="./pages/Vajilla y Manteleria.html"><h4>Vajilla y Manteleria</h4></a></li>
+    <div class="container-fluid">
+        <a href="#">
+            <img src="./images/logo evento.png" alt="Logo" class="img-fluid logo">
+            <img src="./images/banner evento.png" alt="Banner" class="img-fluid banner">
+        </a>
         
-                <li style="margin-right: 30px;"><a href="./pages/Servicios.html"><h4>Servicios</h4></a></li>
-        
-                <li style="margin-right: 30px;"><a href="./pages/Colegios.html"><h4>Colegios</h4></a></li>
-        
-                <li style="margin-right: 30px;"><a href="./pages/Catering.html"><h4>Catering</h4></a></li>
-        
-                <li style="margin-right: 30px;"><a href="./pages/Casamiento.html"><h4>Casamiento</h4></a></li>
-
-                <li style="margin-right: 30px;"><a href="./pages/15 y 18 Años.html"><h4>15 y 18 Años</h4></a></li>
-             </ul>
+        <header class="pestañas">
+            <!-- Menú de navegación -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="#">Eventos las Estrellas</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Vajilla y Manteleria.html">Vajilla y Mantelería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Colegios.html">Colegios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Catering.html">Catering</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/Casamiento.html">Casamiento</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/15 y 18 Años.html">15 y 18 Años</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        
         </header>
         
-        <main class="pagPrincipal"><!--es el contenido principal de mi pagina-->
-                
-            <h1>Home</h1> <!--titulo principal-->
+        <main class="pagPrincipal">
+            <h1 class="tituloPrincipal text-center my-4"><i>Home</i></h1>
             
-            <!--section video de presentacion-->
-            <section id="sectionVideo"> 
-                <video width="200px" height="200px" controls>
+            <!-- Video de presentación -->
+            <section class="sectionVideo text-center mb-5">
+                <video width="50%" height="auto" controls>
                     <source src="./video/Video presentación evento.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
                 </video>
-                <p>
-                    Somos una empresa con más de 10 años de experiencia, sabemos tus dudas y temores, sabemos tus consultas y aquí estamos para ofrecerte el mejor servicio. Creamos una propuesta inolvidable para que desde tu casa puedas planificar tu fiesta. 
+                <p class="parrafo1 mt-3">
+                    Somos una empresa con más de 10 años de experiencia, sabemos tus dudas y temores, sabemos tus consultas y aquí estamos para ofrecerte el mejor servicio. Creamos una propuesta inolvidable para que desde tu casa puedas planificar tu fiesta.
                 </p>
             </section>
             
-            <h2>Nosotros</h2>
-            <!--section imagen mas texto-->
-            <section id="nosotros">
-                <div class="parrafos2345">
-                    <p2>
-                        Soy Alejandra, mamá de 4 hijos, esposa y emprendedora. Comencé hace más de 10 años mi pequeño emprendimiento con mi familia, alquilando mesas y sillas y hoy somos una gran empresa de eventos que ofrece un servicio único para tu noche tan esperada en zona norte. 
-                    </p2>
-                    <p3>
-                        Contamos con vajilla, mantelería, servio de mozos, parrillero, fotógrafo, catering para tu evento. Nos encargamos de acompañarte y asistirte para que ustedes estén tranquilos y puedan disfrutar. 
-                    </p3>
-                        
-                    <p4>
-                        Ofrecemos diversos servicios y aranceles para poder adaptar el servicio a tu presupuesto. 
-
-                    </p4>
-                    
-                    <p5>
-                        Trabajamos realizando diferentes eventos, 15 y 18 años, casamientos, reuniones sociales, entrega de medallas, fiestas de fin de año, egresados, entre otros
-                    </p5>
-                </div>    
-
-                <img src="./images/foto pato y negro.jpg" alt=""  width="500px" height="400px" class="fotoPato">
+            <!-- Sección Nosotros con Grid -->
+            <section class="nosotros-section mb-5">
+                <h2 class="tituloNosotros text-center mb-4"><i>Nosotros</i></h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="parrafos2345">
+                            <p class="parrafo2">
+                                Soy Alejandra, mamá de 4 hijos, esposa y emprendedora. Comencé hace más de 10 años mi pequeño emprendimiento con mi familia, alquilando mesas y sillas y hoy somos una gran empresa de eventos que ofrece un servicio único para tu noche tan esperada en zona norte.
+                            </p>
+                            <p class="parrafo3">
+                                Contamos con vajilla, mantelería, servicio de mozos, parrillero, fotógrafo, catering para tu evento. Nos encargamos de acompañarte y asistirte para que ustedes estén tranquilos y puedan disfrutar.
+                            </p>
+                            <p class="parrafo4">
+                                Ofrecemos diversos servicios y aranceles para poder adaptar el servicio a tu presupuesto.
+                            </p>
+                            <p class="parrafo5">
+                                Trabajamos realizando diferentes eventos: 15 y 18 años, casamientos, reuniones sociales, entrega de medallas, fiestas de fin de año, egresados, entre otros.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex justify-content-center align-items-center">
+                        <img src="./images/foto pato y negro.jpg" alt="Equipo de Eventos" class="img-fluid fotoPato">
+                    </div>
+                </div>
+            </section>
             
-            </section>    
-            
-            
-            
-            
-            <h2>Ubicacion</h2><!--maps de ubicacion-->
-                
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37138.623915352044!2d-58.514789837707575!3d-34.63900152395802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbf80977ed5%3A0xb7eedcbe4a3ab64e!2sEstadio%20Pedro%20Bidegain!5e0!3m2!1ses-419!2sar!4v1720664067197!5m2!1ses-419!2sar" width="200px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <!-- Ubicación con Mapa -->
+            <section class="ubicacion-section mb-5">
+                <h2 class="text-center mb-4"><i>Ubicación</i></h2>
+                <div class="d-flex justify-content-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37138.623915352044!2d-58.514789837707575!3d-34.63900152395802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbbf80977ed5%3A0xb7eedcbe4a3ab64e!2sEstadio%20Pedro%20Bidegain!5e0!3m2!1ses-419!2sar!4v1720664067197!5m2!1ses-419!2sar" 
+                            width="30%" height="150" style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
         </main>
         
-        <footer><!--pie de pagina (ejemplo: 2024 copyright)-->
-            
-                <div><!--redes sociales-->
-                <img src="./images/instagram-logo.jpg" alt="instagram" class="instagram">
-                <a href="https://www.instagram.com/eventoslasestrellas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><h4>instagram</h4></a> 
+        <footer class="pieDePagina bg-dark text-white py-4">
+            <div class="container text-center">
+                <div class="redesSociales mb-3">
+                    <a href="https://www.instagram.com/eventoslasestrellas" target="_blank">
+                        <img src="./images/instagram-logo.jpg" alt="Instagram" class="instagram mr-2" width="30">
+                        <span>Instagram</span>
+                    </a>
                 </div>
-            
-                2024 copyright
-        
+                <p>&copy; 2024 Eventos las Estrellas. Todos los derechos reservados.</p>
+            </div>
         </footer>
-        </div>
-    </section>
+    </div>
     
-  </body>
+    <!-- Integrar Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
