@@ -1,21 +1,43 @@
+// Variables de colores
 $primary-color: black;
 $secondary-color: #6c757d;
+$bg-color: #f8f9fa;
+$text-color: #153339;
 
+// Mixin para hover
+@mixin hover-effect($color) {
+  &:hover {
+    color: $color;
+  }
+}
+
+// Estilos para el body
 body {
   font-family: Arial, sans-serif;
   color: $primary-color;
-  background-color: #f8f9fa;
+  background-color: $bg-color;
 }
+
+// Estilos para la barra de navegación
 .pestañas {
-    .navbar-nav {
-      .nav-link {
-        font-size: 1.1rem;
-        color: #153339;
-        
-        &:hover {
-          color: $primary-color;
-        }
-      }
+  .navbar-nav {
+    .nav-link {
+      font-size: 1.1rem;
+      color: $text-color;
+      @include hover-effect($primary-color); // Reutilizamos el mixin para hover
     }
   }
-  
+}
+
+// Estilo básico para los encabezados (extendiendo estilos)
+h1, h2 {
+  @extend %default-header;
+  color: $primary-color;
+  margin-bottom: 1rem;
+}
+
+// Clase extendida para los encabezados
+%default-header {
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+}
